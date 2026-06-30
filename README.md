@@ -6,6 +6,8 @@ TrueLoop runtime holds a multi-channel output at a setpoint far tighter than
 finite-difference and SPSA gradient methods, and the advantage widens with the
 channel count.
 
+The full method, protocol, and limits are in [`TrueLoop_Collaboration_Brief.pdf`](./TrueLoop_Collaboration_Brief.pdf).
+
 It runs **out of the box on a simulated plant**, and is built so you can **swap in
 your real hardware by editing one file**.
 

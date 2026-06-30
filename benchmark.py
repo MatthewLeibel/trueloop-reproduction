@@ -83,6 +83,7 @@ def main():
           f"{'SWC/FD':>8} {'meas (SWC|FD|SPSA)':>20}")
     results = {}
     for n in SIZES:
+        print(f"  running n={n} ... (live calls to the endpoint, this can take ~30-90s per size)", flush=True)
         sw = [run_swc(n, s) for s in SEEDS]
         fd = [run_finite_difference(n, s, ROUNDS) for s in SEEDS]
         sp = [run_spsa(n, s, ROUNDS) for s in SEEDS]

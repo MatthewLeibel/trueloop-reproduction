@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "swc-runtime"
+version = "0.1.0"
+description = "TrueLoop Compute client — the measurement-efficient optimization runtime (HTTP client; the update law runs on TrueLoop's endpoint)"
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [{ name = "NEOTECH Inc." }]
+license = { text = "Proprietary — evaluation use under the TrueLoop Evaluation Agreement" }
+dependencies = []   # standard library only
+
+[project.urls]
+Homepage = "https://trueloopcompute.com"
+Docs = "https://trueloopcompute.com/docs"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["swc*"]
